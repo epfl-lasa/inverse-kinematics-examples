@@ -1,0 +1,26 @@
+<Config>
+  <Packages>test_of_torque kuka_robot_model</Packages>
+    <World> NicoHapticWorld
+     </World>
+
+    <Robot> KUKA
+        <Name> KUKA </Name>
+        <RobotModule> Test_1_IK
+            <Options>
+            </Options>
+        </RobotModule> 
+
+
+        <ControlMode>   position    </ControlMode>
+        <Args>                    </Args>
+    </Robot>
+
+    <Simulator>
+
+        <Period>  0.002  </Period>
+        <Gravity> 0 0 -9.81 </Gravity>
+    </Simulator>
+
+
+</Config>
+
