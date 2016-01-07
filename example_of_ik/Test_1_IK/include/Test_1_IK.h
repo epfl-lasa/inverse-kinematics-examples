@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2010 Learning Algorithms and Systems Laboratory, EPFL, Switzerland
- * Author: Eric Sauser
- * email:   eric.sauser@a3.epf.ch
+ * Author: Seyed Sina Mirrazavi Salehian
+ * email:   sina.mirrazavi@a3.epf.ch
  * website: lasa.epfl.ch
  *
  * Permission is granted to copy, distribute, and/or modify this program
