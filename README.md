@@ -8,9 +8,11 @@ This is a short tutorial about how to use the quadratic programming based invers
 
 Initialization:
 First a instance of the solver has to be declared in the class (in the .h file):
+
 	MKESolver mSolver;
 
 Set the parameters of the solver in RobotInit():
+
 	mSolver.setConstraints(tmpThetaMinus, tmpThetaPlus, tmpMaxVel*(-1), tmpMaxVel);
 	mSolver.setDimensions(KUKA_DOF, 6);
 	mSolver.setH(tmpH);		
