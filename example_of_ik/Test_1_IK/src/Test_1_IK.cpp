@@ -183,12 +183,14 @@ RobotInterface::Status Test_1_IK::RobotUpdate(){
 	case PLANNER_CARTESIAN:
 		//lPos.Print("lPos");
 		lTDirection(0)=1;
-		lTDirection(1)=1;
+		lTDirection(1)=0.2;
 		lTDirection(2)=-1;
-		lTDirection.Mult(5*_dt,lTDirection);
+		lTDirection.Mult(0.05*_dt,lTDirection);
 		lTargetPos=lPos+lTDirection;
-		lTargetDirY=lDirY;
-		lTargetDirZ=lDirZ;
+		lTargetDirY.Zero(); lTargetDirY(1)=1;
+		lTargetDirZ.Zero(); lTargetDirZ(2)=1;
+/*		lTargetDirY=lDirY;
+		lTargetDirZ=lDirZ;*/
 		//lTargetPos.Print("lTargetPos");
 		// Set Jacobian
 		mSKinematicChain->getJacobianPos(mJacobian3);
