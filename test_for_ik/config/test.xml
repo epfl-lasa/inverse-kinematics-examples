@@ -1,0 +1,20 @@
+<Config>
+<Packages> test_for_ik kuka_robot_model</Packages>
+	<World> Examples/BasicWorld </World>
+	<Robot> KUKA
+		<Name> feasible_motion module </Name>
+		<RobotModule> feasible_motion
+			<Options> </Options>
+		</RobotModule> 
+        <ControlMode>   position    </ControlMode>
+        <Args>                    </Args>
+    </Robot>
+
+    <Simulator>
+
+        <Period>  0.002  </Period>
+        <Gravity> 0 0 -9.81 </Gravity>
+	</Simulator>
+</Config>
+
+
