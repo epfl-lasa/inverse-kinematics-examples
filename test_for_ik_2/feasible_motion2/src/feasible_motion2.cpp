@@ -232,7 +232,7 @@ RobotInterface::Status feasible_motion2::RobotInit(){
 		for(int j=0; j<4; j++)
 			TF[i][j] = 0.0;
 	TF[3][3] = 1;
-	mTF = Matrix3::SRotationY(M_PI/4.0);
+	mTF = Matrix3::SRotationY(0.0);
 
 	for(int i=0; i<3; i++)
 		for(int j=0; j<3; j++)
